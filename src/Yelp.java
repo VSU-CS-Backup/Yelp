@@ -88,6 +88,8 @@ public class Yelp {
     	for (int i = 0; i < businesses.length(); i++) {
     		JSONObject business = businesses.getJSONObject(i);
     		System.out.println("name: " + business.getString("name"));
+    		System.out.println("rating: " + business.getString("rating"));
+    		System.out.println("mobile_url: " + business.getString("mobile_url"));
     		System.out.println("phone: " + business.getString("phone"));
     		JSONArray address = business.getJSONObject("location").getJSONArray("display_address");
     		String address_string = "";
